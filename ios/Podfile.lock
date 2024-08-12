@@ -1,34 +1,72 @@
 PODS:
+  - AppAuth (1.7.2):
+    - AppAuth/Core (= 1.7.2)
+    - AppAuth/ExternalUserAgent (= 1.7.2)
+  - AppAuth/Core (1.7.2)
+  - AppAuth/ExternalUserAgent (1.7.2):
+    - AppAuth/Core
   - Flutter (1.0.0)
-  - flutter_secure_storage (3.3.1):
+  - flutter_appauth (0.0.1):
+    - AppAuth (= 1.7.2)
     - Flutter
-  - flutter_web_auth_2 (1.1.1):
+  - flutter_secure_storage (6.0.0):
     - Flutter
+  - flutter_web_auth_2 (3.0.0):
+    - Flutter
+  - oidc_ios (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - url_launcher_ios (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_appauth (from `.symlinks/plugins/flutter_appauth/ios`)
   - flutter_secure_storage (from `.symlinks/plugins/flutter_secure_storage/ios`)
   - flutter_web_auth_2 (from `.symlinks/plugins/flutter_web_auth_2/ios`)
+  - oidc_ios (from `.symlinks/plugins/oidc_ios/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_appauth:
+    :path: ".symlinks/plugins/flutter_appauth/ios"
   flutter_secure_storage:
     :path: ".symlinks/plugins/flutter_secure_storage/ios"
   flutter_web_auth_2:
     :path: ".symlinks/plugins/flutter_web_auth_2/ios"
+  oidc_ios:
+    :path: ".symlinks/plugins/oidc_ios/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
   url_launcher_ios:
     :path: ".symlinks/plugins/url_launcher_ios/ios"
 
 SPEC CHECKSUMS:
-  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_secure_storage: 7953c38a04c3fdbb00571bcd87d8e3b5ceb9daec
-  flutter_web_auth_2: a1bc00762c408a8f80b72a538cd7ff5b601c3e71
-  url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
+  AppAuth: ca2458caccec349cc1e26d8d9e8fd7d22f1d01f3
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_appauth: c5e36e22af413d4b5b2997d61c97f7350d9bd25b
+  flutter_secure_storage: d33dac7ae2ea08509be337e775f6b59f1ff45f12
+  flutter_web_auth_2: 051cf9f5dc366f31b5dcc4e2952c2b954767be8a
+  oidc_ios: e80c00b7089ae7cdc45ab9ed636fdaed3e01e6a1
+  path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
+  shared_preferences_foundation: b4c3b4cddf1c21f02770737f147a3f5da9d39695
+  url_launcher_ios: 6116280ddcfe98ab8820085d8d76ae7449447586
 
-PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+PODFILE CHECKSUM: c4c93c5f6502fe2754f48404d3594bf779584011
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2

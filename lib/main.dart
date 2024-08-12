@@ -6,8 +6,8 @@ import 'package:oidc_default_store/oidc_default_store.dart';
 /// Zitadel url + client id.
 /// you can replace String.fromEnvironment(*) calls with the actual values
 /// if you don't want to pass them dynamically.
-final zitadelIssuer = Uri.parse(const String.fromEnvironment('zitadel_url'));
-const zitadelClientId = String.fromEnvironment('zitadel_client_id');
+final zitadelIssuer = Uri.parse('https://test-instance-ao8z4g.zitadel.cloud');
+const zitadelClientId = '280083175663926798';
 
 /// This should be the app's bundle id.
 const callbackUrlScheme = 'com.zitadel.zitadelflutter';
